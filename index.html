@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+ 
+    <div class="digital-clock">
+        <div class="time">
+            <span class="hours">00</span>
+            <span class="dots">:</span>
+            <span class="minutes">00</span>
+            <div class="right-side">
+            <span class="period">AM</span>
+            <span class="seconds">00</span>
+            </div>
+        </div>
+        <div class="calender">
+            <span class="month-name">May</span>,
+            <span class="day-name">Sunday</span>
+            <span class="day-number">6</span>
+            <span class="year">2024</span>
+        </div>
+    </div>
+
+
+    <script>
+        function Clock(){
+           var today = new Date();    //انشاء كائن Date جديد للحصول ع التاريخ والوقت الحالي
+           var hours = today.getHours();
+           var minutes = today.getMinutes(); //تحديدالساعات والدقائق والثواني من الوقت الحالي 
+           var seconds = today.getSeconds();
+           let period ="AM" ; 
+
+           // يقوم بتحديد العناصر في مستند HTML باستخدام querySelector وتعيين قيم الساعات والدقائق والثواني والفترة إلى العناصر المطابقة
+           document.querySelector(".hours").innerHTML = hours ;
+           document.querySelector(".minutes").innerHTML = minutes ;
+           document.querySelector(".seconds").innerHTML = seconds ;
+           document.querySelector(".period").innerHTML = period ;
+
+           
+
+
+
+
+
+
+
+
+        }
+    </script>
+    
+
+</body>
+</html>
