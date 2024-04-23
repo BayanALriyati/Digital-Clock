@@ -238,7 +238,7 @@ body{
         position: relative;
         color: #fff ;
         background: #2e2e44;
-        width: 330px;
+        width: 300px;
         padding: 20px 45px;
         box-shadow: 0 5px 25px rgba(14, 21, 37, 0.3);
         border-radius: 10px;
@@ -249,7 +249,7 @@ body{
     }
 
     .hours, .minutes{
-        font-size: 5em;
+        font-size: 4em;
         width: 100px;
     }
     
