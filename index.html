@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
  
     <div class="digital-clock">
+        <i class="fa-solid fa-ellipsis-vertical dot-menu-btn" id="active-menu"></i>
+        <ul class="dot-menu" id="active-menu">
+            <li class="menu-item" id="active-menu">
+                <span class="clock-format-text" id="active-menu">24-hour format </span>
+                <div class="format-switch-btm" data-format="12" id="active-menu"></div>
+            </li>
+        </ul>
         <div class="time">
             <span class="hours">00</span>
             <span class="dots">:</span>
@@ -27,33 +35,6 @@
         </div>
     </div>
 
-
-    <script>
-        function Clock(){
-           var today = new Date();    //انشاء كائن Date جديد للحصول ع التاريخ والوقت الحالي
-           var hours = today.getHours();
-           var minutes = today.getMinutes(); //تحديدالساعات والدقائق والثواني من الوقت الحالي 
-           var seconds = today.getSeconds();
-           let period ="AM" ; 
-
-           // يقوم بتحديد العناصر في مستند HTML باستخدام querySelector وتعيين قيم الساعات والدقائق والثواني والفترة إلى العناصر المطابقة
-           document.querySelector(".hours").innerHTML = hours ;
-           document.querySelector(".minutes").innerHTML = minutes ;
-           document.querySelector(".seconds").innerHTML = seconds ;
-           document.querySelector(".period").innerHTML = period ;
-
-           
-
-
-
-
-
-
-
-
-        }
-    </script>
-    
-
+    <script src="./script.js"></script>
 </body>
 </html>
